@@ -1,18 +1,17 @@
 # A short, descriptive name of this building block collection
-name: My OGC Building Blocks repository
+name: CityGML Profiles
 
 # Short abstract for this collection (optional)
 abstract: |
-  This is an example text for the abstract. It should be short and to the point.
-  A "Tell me more" link will appear if there is an additional description with a longer explanation.
+  This repository is for the development, testing and publication of CityGML profiles.
 
+  Building blocks represent different levels of abstraction, from conceptual to  implementation modules to individuals Feature Types, and ways of combining these.
 # Description for this collection (optional)
 description: |
-  The description can be longer. Both **the abstract** *and the description* support Markdown,
-  including [links](https://google.es).
+  TBD
 
 # Customize the following prefix (will be prepended to the path of the building blocks):
-identifier-prefix: ogc.bbr.template.
+identifier-prefix: ogc.geo.citygml.
 
 # List of imports ("default" is an alias for the main OGC Building Blocks Register)
 imports:

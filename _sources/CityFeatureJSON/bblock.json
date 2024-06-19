@@ -1,6 +1,6 @@
 {
-  "name": "Custom Feature",
-  "abstract": "This examples shows a simple customisation for OGC API Feature schemas",
+  "name": "CityGML Feature JSON Schema",
+  "abstract": "A Generic OGC API Features compliant JSON schema. The schema is derived from the CityGML UML model",
   "status": "under-development",
   "dateTimeAddition": "2023-05-19T00:00:00Z",
   "itemClass": "schema",
@@ -16,11 +16,12 @@
   "maturity": "development",
   "scope": "unstable",
   "dependsOn": [
+    "ogc.geo.citygml.conceptual"
   ],
   "tags": [
     "feature",
     "examples"
   ],
-  "group": "Examples",
+  "group": "Implementations",
   "highlighted": true
 }
