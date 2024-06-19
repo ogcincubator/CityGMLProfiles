@@ -7,85 +7,115 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/ogc.bbr.template.myFeature> a skos:Concept,
+<https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/ogc.geo.citygml.CityFeatureJSON> a skos:Concept,
         dcat:Dataset,
         bblocks:Schema ;
-    rdfs:label "Custom Feature" ;
-    dct:abstract "This examples shows a simple customisation for OGC API Feature schemas" ;
+    rdfs:label "CityGML Feature JSON Schema" ;
+    dct:abstract "A Generic OGC API Features compliant JSON schema. The schema is derived from the CityGML UML model" ;
     dct:created "2023-05-19T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/master/build/generateddocs/markdown/bbr/template/myFeature/index.md" ],
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/master/build/generateddocs/json-full/geo/citygml/CityFeatureJSON/index.json" ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/master/build/generateddocs/slate-build/bbr/template/myFeature/" ],
-        [ dct:format "application/json" ;
-            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/master/build/generateddocs/json-full/bbr/template/myFeature/index.json" ],
+            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/master/build/generateddocs/slate-build/geo/citygml/CityFeatureJSON/" ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/master/build/generateddocs/markdown/geo/citygml/CityFeatureJSON/index.md" ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/master/bblock/ogc.bbr.template.myFeature" ] ;
+            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/master/bblock/ogc.geo.citygml.CityFeatureJSON" ] ;
     dct:hasVersion "1.0" ;
     dct:modified "2024-06-19"^^xsd:date ;
     dct:source <https://docs.ogc.org/is/17-069r3/17-069r3.html#_response_7> ;
     skos:inScheme <https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/master/> ;
     dcat:keyword "examples",
         "feature" ;
-    bblocks:dependsOn <https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/ogc.bbr.template.mySchema>,
+    bblocks:dependsOn <https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/ogc.geo.citygml.conceptual>,
         <https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/ogc.geo.features.feature> ;
-    bblocks:hasJsonLdContext <https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/master/build/annotated/bbr/template/myFeature/context.jsonld> ;
-    bblocks:hasSchema <https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/master/build/annotated/bbr/template/myFeature/schema.json>,
-        <https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/master/build/annotated/bbr/template/myFeature/schema.yaml> ;
-    bblocks:hasShaclRule <https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/master/_sources/mySchema/rules.shacl> ;
+    bblocks:hasJsonLdContext <https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/master/build/annotated/geo/citygml/CityFeatureJSON/context.jsonld> ;
+    bblocks:hasSchema <https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/master/build/annotated/geo/citygml/CityFeatureJSON/schema.json>,
+        <https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/master/build/annotated/geo/citygml/CityFeatureJSON/schema.yaml> ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> .
+
+<https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/ogc.geo.citygml.conceptual-core-profile> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Schema ;
+    rdfs:label "CityGML Core Profile" ;
+    dct:abstract "Core CityGML profile - as UML if applicable" ;
+    dct:created "2024-06-19T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/master/build/generateddocs/json-full/geo/citygml/conceptual-core-profile/index.json" ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/master/build/generateddocs/markdown/geo/citygml/conceptual-core-profile/index.md" ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/master/build/generateddocs/slate-build/geo/citygml/conceptual-core-profile/" ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/master/bblock/ogc.geo.citygml.conceptual-core-profile" ] ;
+    dct:hasVersion "1.0" ;
+    dct:modified "2024-06-19"^^xsd:date ;
+    dct:source <https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/TBD> ;
+    skos:inScheme <https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/master/> ;
+    dcat:keyword "examples",
+        "feature" ;
+    bblocks:dependsOn <https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/ogc.geo.citygml.conceptual> ;
     bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> .
 
 <https://docs.ogc.org/is/17-069r3/17-069r3.html#_response_7> rdfs:label "OGC API - Features, Part 1, 7.16.2: Feature Response" .
 
-<https://example.com/sources/1> rdfs:label "Sample source document" .
+<https://github.com/opengeospatial/CityGML-3.0CM/releases/download/3.0.0-final.2021.02.23/XMI.Files.zip> rdfs:label "XMI source files" .
 
-<https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/ogc.bbr.template.mySchema> a skos:Concept,
+<https://www.ogc.org/standard/citygml/> rdfs:label "CityGML Conceptual Model" .
+
+<https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/TBD> rdfs:label "CityGML Conceptual Model Core Profile",
+        "CityGML Conceptual Model Profile -  UML in server",
+        "CityGML Conceptual Model UML in server",
+        "Class Diagram",
+        "Package Diagram",
+        "XMI source file" .
+
+<https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/ogc.geo.citygml.conceptual> a skos:Concept,
         dcat:Dataset,
         bblocks:Schema ;
-    rdfs:label "My Schema" ;
-    dct:abstract "An example schema defining the set of properties of any type of object." ;
-    dct:created "2023-04-05T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
-            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/master/build/generateddocs/json-full/bbr/template/mySchema/index.json" ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/master/build/generateddocs/slate-build/bbr/template/mySchema/" ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/master/bblock/ogc.bbr.template.mySchema" ],
+    rdfs:label "CityGML Feature ConceptualModel" ;
+    dct:abstract "The CityGML Conceptual Model. Normative artefact is a UML model, this building block registers it and provides for transparency regarding other implementation relationships to the model." ;
+    dct:created "2023-05-19T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/master/build/generateddocs/slate-build/geo/citygml/conceptual/" ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/master/build/generateddocs/markdown/bbr/template/mySchema/index.md" ] ;
-    dct:hasVersion "0.1" ;
+            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/master/build/generateddocs/markdown/geo/citygml/conceptual/index.md" ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/master/build/generateddocs/json-full/geo/citygml/conceptual/index.json" ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/master/bblock/ogc.geo.citygml.conceptual" ] ;
+    dct:hasVersion "1.0" ;
     dct:modified "2024-06-19"^^xsd:date ;
-    dct:source <https://example.com/sources/1> ;
+    dct:source <https://github.com/opengeospatial/CityGML-3.0CM/releases/download/3.0.0-final.2021.02.23/XMI.Files.zip>,
+        <https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/TBD>,
+        <https://www.ogc.org/standard/citygml/> ;
     skos:inScheme <https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/master/> ;
-    dcat:keyword "templates" ;
-    bblocks:hasJsonLdContext <https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/master/build/annotated/bbr/template/mySchema/context.jsonld> ;
-    bblocks:hasSchema <https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/master/build/annotated/bbr/template/mySchema/schema.json>,
-        <https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/master/build/annotated/bbr/template/mySchema/schema.yaml> ;
-    bblocks:hasShaclRule <https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/master/_sources/mySchema/rules.shacl> ;
-    bblocks:hasSourceJsonLdContext <https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/master/_sources/mySchema/context.jsonld> ;
+    dcat:keyword "examples",
+        "feature" ;
     bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> .
 
 <https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/master/> a skos:ConceptScheme,
         dcat:Catalog ;
-    rdfs:label "Building Blocks - My OGC Building Blocks repository" ;
-    dct:abstract """This is an example text for the abstract. It should be short and to the point.
-A "Tell me more" link will appear if there is an additional description with a longer explanation.
+    rdfs:label "Building Blocks - CityGML Profiles" ;
+    dct:abstract """This repository is for the development, testing and publication of CityGML profiles.
+
+Building blocks represent different levels of abstraction, from conceptual to  implementation modules to individuals Feature Types, and ways of combining these.
 """ ;
-    dct:description """The description can be longer. Both **the abstract** *and the description* support Markdown,
-including [links](https://google.es).
+    dct:description """TBD
 """ ;
-    skos:prefLabel "Building Blocks - My OGC Building Blocks repository" ;
+    skos:prefLabel "Building Blocks - CityGML Profiles" ;
     bblocks:hasValidationReport <https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/master/build/tests/report.html> ;
     bblocks:imports <https://opengeospatial.github.io/bblocks/register.json> .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2024-06-19T19:53:14.242540"^^xsd:dateTime ;
-    prov:startedAtTime "2024-06-19T19:53:14.180860"^^xsd:dateTime ;
+    prov:endedAtTime "2024-06-19T20:40:13.751925"^^xsd:dateTime ;
+    prov:startedAtTime "2024-06-19T20:40:13.692705"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
             dct:format "application/json" ;
-            dct:hasVersion "git:8e9d1d0370f1f93ebc3c6d164bef8ff38099fe2f" ;
+            dct:hasVersion "git:57b70245c415a79ec072d6af63f2f958fbe54cfb" ;
             rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/master/build/register.json> ],
         [ a prov:Entity ;
             dct:format "application/yaml" ;

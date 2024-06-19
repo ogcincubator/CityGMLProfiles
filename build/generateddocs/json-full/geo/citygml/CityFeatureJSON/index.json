@@ -1,0 +1,70 @@
+
+
+{
+  "itemIdentifier": "ogc.geo.citygml.CityFeatureJSON",
+  "name": "CityGML Feature JSON Schema",
+  "abstract": "A Generic OGC API Features compliant JSON schema. The schema is derived from the CityGML UML model",
+  "status": "under-development",
+  "dateTimeAddition": "2023-05-19T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-building-block-examples",
+  "version": "1.0",
+  "dateOfLastChange": "2024-06-19",
+  "sources": [
+    {
+      "title": "OGC API - Features, Part 1, 7.16.2: Feature Response",
+      "link": "https://docs.ogc.org/is/17-069r3/17-069r3.html#_response_7"
+    }
+  ],
+  "maturity": "development",
+  "scope": "unstable",
+  "dependsOn": [
+    "ogc.geo.citygml.conceptual",
+    "ogc.geo.features.feature"
+  ],
+  "tags": [
+    "feature",
+    "examples"
+  ],
+  "group": "Implementations",
+  "highlighted": true,
+  "shaclRules": {},
+  "schema": {
+    "application/yaml": "https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/master/build/annotated/geo/citygml/CityFeatureJSON/schema.yaml",
+    "application/json": "https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/master/build/annotated/geo/citygml/CityFeatureJSON/schema.json"
+  },
+  "sourceSchema": "https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/master/_sources/CityFeatureJSON/schema.yaml",
+  "ldContext": "https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/master/build/annotated/geo/citygml/CityFeatureJSON/context.jsonld",
+  "sourceFiles": "https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/master/_sources/CityFeatureJSON/",
+  "validationPassed": true,
+  "testOutputs": "https://github.com/ogcincubator/CityGMLProfiles/blob/master/build/tests/geo/citygml/CityFeatureJSON/",
+  "description": "## CityGML as JSON based on FG-JSON schema\n\n\n\n\n",
+  "examples": [
+    {
+      "title": "GeoJSON - specialisation example.",
+      "comment": "This examples shows how to define a customised schema based on an existing building block - in this case the OGC API Features basic GeoJSON Feature response",
+      "base-uri": "http://example.com/features/",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "examples/feature.json",
+          "code": "{\n  \"@context\": {\n    \"mynamespace\": \"http://example.org/ns1/\"\n  },\n  \"id\": \"f1\",\n  \"type\": \"Feature\",\n  \"geometry\": {\n    \"type\": \"LineString\",\n    \"coordinates\": [\n      [\n        -111.67183507997295,\n        40.056709946862874\n      ],\n      [\n        -111.71,\n        40.156709946862874\n      ]\n    ]\n  },\n  \"properties\": {\n    \"a\": \"mynamespace:aThing\",\n    \"b\": 23,\n    \"c\": 0.1\n  }\n}\n",
+          "url": "https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/master/build/tests/geo/citygml/CityFeatureJSON/example_1_1.json"
+        },
+        {
+          "language": "jsonld",
+          "code": "{\n  \"@context\": [\n    \"https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/master/build/annotated/geo/citygml/CityFeatureJSON/context.jsonld\",\n    {\n      \"mynamespace\": \"http://example.org/ns1/\"\n    }\n  ],\n  \"id\": \"f1\",\n  \"type\": \"Feature\",\n  \"geometry\": {\n    \"type\": \"LineString\",\n    \"coordinates\": [\n      [\n        -111.67183507997295,\n        40.056709946862874\n      ],\n      [\n        -111.71,\n        40.156709946862875\n      ]\n    ]\n  },\n  \"properties\": {\n    \"a\": \"mynamespace:aThing\",\n    \"b\": 23,\n    \"c\": 0.1\n  }\n}",
+          "url": "https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/master/build/tests/geo/citygml/CityFeatureJSON/example_1_1.jsonld"
+        },
+        {
+          "language": "ttl",
+          "code": "@prefix geojson: <https://purl.org/geojson/vocab#> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n<http://example.com/features/f1> a geojson:Feature ;\n    geojson:geometry [ a geojson:LineString ;\n            geojson:coordinates ( ( -1.116718e+02 4.005671e+01 ) ( -1.1171e+02 4.015671e+01 ) ) ] .\n\n",
+          "url": "https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/master/build/tests/geo/citygml/CityFeatureJSON/example_1_1.ttl"
+        }
+      ]
+    }
+  ],
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Example of a sinmple GeoJSON Feature specialisation\n$ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/feature/schema.yaml\n",
+  "gitRepository": "https://github.com/ogcincubator/CityGMLProfiles",
+  "gitPath": "_sources/CityFeatureJSON"
+}

@@ -1,0 +1,56 @@
+
+
+{
+  "itemIdentifier": "ogc.geo.citygml.conceptual-core-profile",
+  "name": "CityGML Core Profile",
+  "abstract": "Core CityGML profile - as UML if applicable",
+  "status": "under-development",
+  "dateTimeAddition": "2024-06-19T00:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-building-block-examples",
+  "version": "1.0",
+  "dateOfLastChange": "2024-06-19",
+  "dependsOn": [
+    "ogc.geo.citygml.conceptual"
+  ],
+  "sources": [
+    {
+      "title": "CityGML Conceptual Model Core Profile",
+      "link": "TBD"
+    },
+    {
+      "title": "CityGML Conceptual Model Profile -  UML in server",
+      "link": "TBD",
+      "role": "model-link"
+    },
+    {
+      "title": "XMI source file",
+      "link": "TBD",
+      "role": "xmi"
+    },
+    {
+      "title": "Package Diagram",
+      "link": "TBD",
+      "role": "package-diagram"
+    },
+    {
+      "title": "Class Diagram",
+      "link": "TBD",
+      "role": "class-diagram"
+    }
+  ],
+  "maturity": "development",
+  "scope": "unstable",
+  "tags": [
+    "feature",
+    "examples"
+  ],
+  "group": "Implementations",
+  "highlighted": true,
+  "shaclRules": {},
+  "sourceFiles": "https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/master/_sources/conceptual-core-profile/",
+  "validationPassed": true,
+  "annotatedSchema": null,
+  "gitRepository": "https://github.com/ogcincubator/CityGMLProfiles",
+  "gitPath": "_sources/conceptual-core-profile"
+}
