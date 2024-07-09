@@ -1,6 +1,6 @@
 {
   "@context": [
-    "https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/master/build/annotated/geo/citygml/CityFeatureJSON/context.jsonld",
+    "https://ogcincubator.github.io/CityGMLProfiles/build/annotated/geo/citygml/CityFeatureJSON/context.jsonld",
     {
       "mynamespace": "http://example.org/ns1/"
     }

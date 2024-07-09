@@ -1,7 +1,7 @@
 {
   "@context": [
     {
-      "@base": "https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/master"
+      "@base": "https://ogcincubator.github.io/CityGMLProfiles"
     },
     {
       "bblocks": "https://www.opengis.net/def/bblocks/",
@@ -106,19 +106,19 @@
   "name": "Building Blocks - CityGML Profiles",
   "abstract": "This repository is for the development, testing and publication of CityGML profiles.\n\nBuilding blocks represent different levels of abstraction, from conceptual to  implementation modules to individuals Feature Types, and ways of combining these.\n",
   "description": "TBD\n",
-  "modified": "2024-06-19T20:40:12.303653",
+  "modified": "2024-07-09T00:45:57.609175",
   "tooling": {
     "bblocks-postprocess": {
-      "commitId": "\"6badef16348eb4c240d1a1e4389d783ba62b56b9",
-      "shortCommitId": "\"6badef",
-      "date": "2024-06-18T18:19:19+00:00\""
+      "commitId": "\"59af8b65c87552d103c26900d115b39f46238b57",
+      "shortCommitId": "\"59af8b",
+      "date": "2024-07-08T08:08:11+00:00\""
     }
   },
   "gitRepository": "https://github.com/ogcincubator/CityGMLProfiles",
   "gitHubRepository": "https://github.com/ogcincubator/CityGMLProfiles/blob/master/",
-  "baseURL": "https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/master/",
-  "viewerURL": "https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/master/",
-  "validationReport": "https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/master/build/tests/report.html",
+  "baseURL": "https://ogcincubator.github.io/CityGMLProfiles/",
+  "viewerURL": "https://ogcincubator.github.io/CityGMLProfiles/",
+  "validationReport": "https://ogcincubator.github.io/CityGMLProfiles/build/tests/report.html",
   "imports": [
     "https://opengeospatial.github.io/bblocks/register.json"
   ],
@@ -137,7 +137,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2024-06-19",
+      "dateOfLastChange": "2023-05-19",
       "sources": [
         {
           "title": "CityGML Conceptual Model",
@@ -173,24 +173,20 @@
       "group": "Implementations",
       "highlighted": false,
       "shaclRules": {},
-      "sourceFiles": "https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/master/_sources/conceptual/",
+      "sourceFiles": "https://ogcincubator.github.io/CityGMLProfiles/_sources/conceptual/",
       "validationPassed": true,
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/master/build/generateddocs/markdown/geo/citygml/conceptual/index.md"
+          "url": "https://ogcincubator.github.io/CityGMLProfiles/build/generateddocs/markdown/geo/citygml/conceptual/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/master/build/generateddocs/json-full/geo/citygml/conceptual/index.json"
-        },
-        "slate": {
-          "mediatype": "text/html",
-          "url": "https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/master/build/generateddocs/slate-build/geo/citygml/conceptual/"
+          "url": "https://ogcincubator.github.io/CityGMLProfiles/build/generateddocs/json-full/geo/citygml/conceptual/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/master/bblock/ogc.geo.citygml.conceptual"
+          "url": "https://ogcincubator.github.io/CityGMLProfiles/bblock/ogc.geo.citygml.conceptual"
         }
       },
       "@type": [
@@ -247,24 +243,20 @@
       "group": "Implementations",
       "highlighted": true,
       "shaclRules": {},
-      "sourceFiles": "https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/master/_sources/conceptual-core-profile/",
+      "sourceFiles": "https://ogcincubator.github.io/CityGMLProfiles/_sources/conceptual-core-profile/",
       "validationPassed": true,
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/master/build/generateddocs/markdown/geo/citygml/conceptual-core-profile/index.md"
+          "url": "https://ogcincubator.github.io/CityGMLProfiles/build/generateddocs/markdown/geo/citygml/conceptual-core-profile/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/master/build/generateddocs/json-full/geo/citygml/conceptual-core-profile/index.json"
-        },
-        "slate": {
-          "mediatype": "text/html",
-          "url": "https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/master/build/generateddocs/slate-build/geo/citygml/conceptual-core-profile/"
+          "url": "https://ogcincubator.github.io/CityGMLProfiles/build/generateddocs/json-full/geo/citygml/conceptual-core-profile/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/master/bblock/ogc.geo.citygml.conceptual-core-profile"
+          "url": "https://ogcincubator.github.io/CityGMLProfiles/bblock/ogc.geo.citygml.conceptual-core-profile"
         }
       },
       "@type": [
@@ -282,7 +274,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2024-06-19",
+      "dateOfLastChange": "2023-05-19",
       "sources": [
         {
           "title": "OGC API - Features, Part 1, 7.16.2: Feature Response",
@@ -292,8 +284,8 @@
       "maturity": "development",
       "scope": "unstable",
       "dependsOn": [
-        "ogc.geo.citygml.conceptual",
-        "ogc.geo.features.feature"
+        "ogc.geo.features.feature",
+        "ogc.geo.citygml.conceptual"
       ],
       "tags": [
         "feature",
@@ -303,30 +295,26 @@
       "highlighted": true,
       "shaclRules": {},
       "schema": {
-        "application/yaml": "https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/master/build/annotated/geo/citygml/CityFeatureJSON/schema.yaml",
-        "application/json": "https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/master/build/annotated/geo/citygml/CityFeatureJSON/schema.json"
+        "application/yaml": "https://ogcincubator.github.io/CityGMLProfiles/build/annotated/geo/citygml/CityFeatureJSON/schema.yaml",
+        "application/json": "https://ogcincubator.github.io/CityGMLProfiles/build/annotated/geo/citygml/CityFeatureJSON/schema.json"
       },
-      "sourceSchema": "https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/master/_sources/CityFeatureJSON/schema.yaml",
-      "ldContext": "https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/master/build/annotated/geo/citygml/CityFeatureJSON/context.jsonld",
-      "sourceFiles": "https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/master/_sources/CityFeatureJSON/",
+      "sourceSchema": "https://ogcincubator.github.io/CityGMLProfiles/_sources/CityFeatureJSON/schema.yaml",
+      "ldContext": "https://ogcincubator.github.io/CityGMLProfiles/build/annotated/geo/citygml/CityFeatureJSON/context.jsonld",
+      "sourceFiles": "https://ogcincubator.github.io/CityGMLProfiles/_sources/CityFeatureJSON/",
       "validationPassed": true,
       "testOutputs": "https://github.com/ogcincubator/CityGMLProfiles/blob/master/build/tests/geo/citygml/CityFeatureJSON/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/master/build/generateddocs/markdown/geo/citygml/CityFeatureJSON/index.md"
+          "url": "https://ogcincubator.github.io/CityGMLProfiles/build/generateddocs/markdown/geo/citygml/CityFeatureJSON/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/master/build/generateddocs/json-full/geo/citygml/CityFeatureJSON/index.json"
-        },
-        "slate": {
-          "mediatype": "text/html",
-          "url": "https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/master/build/generateddocs/slate-build/geo/citygml/CityFeatureJSON/"
+          "url": "https://ogcincubator.github.io/CityGMLProfiles/build/generateddocs/json-full/geo/citygml/CityFeatureJSON/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/master/bblock/ogc.geo.citygml.CityFeatureJSON"
+          "url": "https://ogcincubator.github.io/CityGMLProfiles/bblock/ogc.geo.citygml.CityFeatureJSON"
         }
       },
       "@type": [

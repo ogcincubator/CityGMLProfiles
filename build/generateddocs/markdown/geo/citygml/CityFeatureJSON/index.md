@@ -52,7 +52,7 @@ A Generic OGC API Features compliant JSON schema. The schema is derived from the
 ```jsonld
 {
   "@context": [
-    "https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/master/build/annotated/geo/citygml/CityFeatureJSON/context.jsonld",
+    "https://ogcincubator.github.io/CityGMLProfiles/build/annotated/geo/citygml/CityFeatureJSON/context.jsonld",
     {
       "mynamespace": "http://example.org/ns1/"
     }
@@ -104,8 +104,8 @@ $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/fe
 
 Links to the schema:
 
-* YAML version: [schema.yaml](https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/master/build/annotated/geo/citygml/CityFeatureJSON/schema.json)
-* JSON version: [schema.json](https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/master/build/annotated/geo/citygml/CityFeatureJSON/schema.yaml)
+* YAML version: [schema.yaml](https://ogcincubator.github.io/CityGMLProfiles/build/annotated/geo/citygml/CityFeatureJSON/schema.json)
+* JSON version: [schema.json](https://ogcincubator.github.io/CityGMLProfiles/build/annotated/geo/citygml/CityFeatureJSON/schema.yaml)
 
 
 # JSON-LD Context
@@ -172,7 +172,7 @@ Links to the schema:
 ```
 
 You can find the full JSON-LD context here:
-[context.jsonld](https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/master/build/annotated/geo/citygml/CityFeatureJSON/context.jsonld)
+[context.jsonld](https://ogcincubator.github.io/CityGMLProfiles/build/annotated/geo/citygml/CityFeatureJSON/context.jsonld)
 
 ## Sources
 

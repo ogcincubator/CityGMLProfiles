@@ -9,7 +9,7 @@
   "itemClass": "schema",
   "register": "ogc-building-block-examples",
   "version": "1.0",
-  "dateOfLastChange": "2024-06-19",
+  "dateOfLastChange": "2023-05-19",
   "sources": [
     {
       "title": "CityGML Conceptual Model",
@@ -45,7 +45,7 @@
   "group": "Implementations",
   "highlighted": false,
   "shaclRules": {},
-  "sourceFiles": "https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/master/_sources/conceptual/",
+  "sourceFiles": "https://ogcincubator.github.io/CityGMLProfiles/_sources/conceptual/",
   "validationPassed": true,
   "annotatedSchema": null,
   "gitRepository": "https://github.com/ogcincubator/CityGMLProfiles",

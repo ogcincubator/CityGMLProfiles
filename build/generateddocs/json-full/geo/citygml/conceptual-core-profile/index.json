@@ -48,7 +48,7 @@
   "group": "Implementations",
   "highlighted": true,
   "shaclRules": {},
-  "sourceFiles": "https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/master/_sources/conceptual-core-profile/",
+  "sourceFiles": "https://ogcincubator.github.io/CityGMLProfiles/_sources/conceptual-core-profile/",
   "validationPassed": true,
   "annotatedSchema": null,
   "gitRepository": "https://github.com/ogcincubator/CityGMLProfiles",

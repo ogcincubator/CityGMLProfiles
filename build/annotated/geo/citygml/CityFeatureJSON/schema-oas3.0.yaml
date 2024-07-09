@@ -1,15 +1,15 @@
 x-defs:
   ogc.geo.features.feature:
     allOf:
-    - $ref: https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/master/build/annotated/geo/citygml/CityFeatureJSON/schema-oas3.0.yaml#/x-defs/ogc.geo.common.data_types.geojson
+    - $ref: https://ogcincubator.github.io/CityGMLProfiles/build/annotated/geo/citygml/CityFeatureJSON/schema-oas3.0.yaml#/x-defs/ogc.geo.common.data_types.geojson
     - type: object
       properties:
         bbox:
-          $ref: https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/master/build/annotated/geo/citygml/CityFeatureJSON/schema-oas3.0.yaml#/x-defs/ogc.geo.common.data_types.bounding_box
+          $ref: https://ogcincubator.github.io/CityGMLProfiles/build/annotated/geo/citygml/CityFeatureJSON/schema-oas3.0.yaml#/x-defs/ogc.geo.common.data_types.bounding_box
         links:
           type: array
           items:
-            $ref: https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/master/build/annotated/geo/citygml/CityFeatureJSON/schema-oas3.0.yaml#/x-defs/ogc.ogc-utils.json-link
+            $ref: https://ogcincubator.github.io/CityGMLProfiles/build/annotated/geo/citygml/CityFeatureJSON/schema-oas3.0.yaml#/x-defs/ogc.ogc-utils.json-link
           x-jsonld-id: http://www.w3.org/2000/01/rdf-schema#seeAlso
         type:
           enum:
@@ -491,4 +491,4 @@ x-defs:
 description: Example of a sinmple GeoJSON Feature specialisation
 x-schema-version: https://json-schema.org/draft/2020-12/schema
 allOf:
-- $ref: https://raw.githubusercontent.com/ogcincubator/CityGMLProfiles/master/build/annotated/geo/citygml/CityFeatureJSON/schema-oas3.0.yaml#/x-defs/ogc.geo.features.feature
+- $ref: https://ogcincubator.github.io/CityGMLProfiles/build/annotated/geo/citygml/CityFeatureJSON/schema-oas3.0.yaml#/x-defs/ogc.geo.features.feature
