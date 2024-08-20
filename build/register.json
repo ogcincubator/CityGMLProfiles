@@ -2,12 +2,12 @@
   "name": "CityGML Profiles",
   "abstract": "This repository is for the development, testing and publication of CityGML profiles.\n\nBuilding blocks represent different levels of abstraction, from conceptual to  implementation modules to individuals Feature Types, and ways of combining these.\n",
   "description": "TBD\n",
-  "modified": "2024-07-09T00:45:57.609175",
+  "modified": "2024-08-20T10:32:53.552690",
   "tooling": {
     "bblocks-postprocess": {
-      "commitId": "\"59af8b65c87552d103c26900d115b39f46238b57",
-      "shortCommitId": "\"59af8b",
-      "date": "2024-07-08T08:08:11+00:00\""
+      "commitId": "\"5ce42fc8f0c7c2cd010ceeabe2fd70a23f1ee2b0",
+      "shortCommitId": "\"5ce42f",
+      "date": "2024-08-15T07:14:25+00:00\""
     }
   },
   "gitRepository": "https://github.com/ogcincubator/CityGMLProfiles",
@@ -28,7 +28,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2023-05-19",
+      "dateOfLastChange": "2024-08-20",
       "sources": [
         {
           "title": "CityGML Conceptual Model",
@@ -90,7 +90,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2024-06-19",
+      "dateOfLastChange": "2024-08-20",
       "dependsOn": [
         "ogc.geo.citygml.conceptual"
       ],
@@ -155,7 +155,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-examples",
       "version": "1.0",
-      "dateOfLastChange": "2023-05-19",
+      "dateOfLastChange": "2024-08-20",
       "sources": [
         {
           "title": "OGC API - Features, Part 1, 7.16.2: Feature Response",

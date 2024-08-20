@@ -1,0 +1,14 @@
+{
+  "title": "Validation report for ogc.geo.citygml.conceptual - CityGML Feature ConceptualModel",
+  "bblockName": "CityGML Feature ConceptualModel",
+  "bblockId": "ogc.geo.citygml.conceptual",
+  "generated": "2024-08-20T10:32:54.087975+00:00",
+  "result": true,
+  "items": [],
+  "globalErrors": {},
+  "counts": {
+    "total": 0,
+    "passed": 0,
+    "failed": 0
+  }
+}
