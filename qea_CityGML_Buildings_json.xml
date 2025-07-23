@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ShapeChangeConfiguration xmlns:xi="http://www.w3.org/2001/XInclude" xmlns="http://www.interactive-instruments.de/ShapeChange/Configuration/1.1" xmlns:sc="http://www.interactive-instruments.de/ShapeChange/Configuration/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Configuration/1.1 http://shapechange.net/resources/schema/ShapeChangeConfiguration.xsd">
+	<input id="json">
+		<parameter name="inputModelType" value="EA7"/>
+		<parameter name="inputFile" value="../uml/.qea"/>
+		<parameter name="appSchemaName" value="Building"/>
+		<parameter name="publicOnly" value="true"/>
+		<parameter name="checkingConstraints" value="disabled"/>
+		<parameter name="sortedSchemaOutput" value="true"/>
+		<xi:include href="http://shapechange.net/resources/config/StandardAliases.xml"/>
+	</input>
+	<log>
+		<parameter name="reportLevel" value="INFO"/>
+		<parameter name="logFile" value="logs/qea_CityGML_Building_json_log.xml"/>
+	</log>
+	<targets>
+		<Target class="de.interactive_instruments.ShapeChange.Target.JSON.JsonSchemaTarget" mode="enabled">
+			<targetParameter name="outputDirectory" value="out/"/>		
+			<targetParameter name="outputFilename" value="CityGML_Building"/>
+			<targetParameter name="sortedOutput" value="true"/>
+			<targetParameter name="entityTypeName" value="@type"/>
+			<targetParameter name="defaultEncodingRule" value="myGeoJson"/>
+			<rules>
+				<EncodingRule name="myGeoJson" extends="defaultGeoJson">
+					<rule name="rule-json-cls-basictype"/>
+					<rule name="rule-json-cls-codelist-uri-format"/>
+					<rule name="rule-json-cls-name-as-entityType"/>
+					<rule name="rule-json-cls-name-as-entityType-union"/>
+				</EncodingRule>
+			</rules>
+			<mapEntries xmlns="http://www.interactive-instruments.de/ShapeChange/Configuration/1.1">
+				<MapEntry type="AbstractFeatureType" rule="*" targetType="../base/BaseTypes.json" param=""/>
+				<MapEntry type="OM_Observation" rule="*" targetType="https://github.com/opengeospatial/ogcapi-sosa/blob/master/build/annotated/unstable/sosa/features/observation/schema.json" param=""/>
+				<MapEntry type="RectifiedGridCoverage" rule="*" targetType="../base/CoveragesDomainAndRange.json" param=""/>
+				<MapEntry type="RelatedOrganization" rule="*" targetType="../base/CoveragesDomainAndRange.json" param=""/>
+				<MapEntry type="DocumentCitation" rule="*" targetType="../base/CoveragesDomainAndRange.json" param=""/>
+				<MapEntry type="StatisticalUnit" rule="*" targetType="../base/Statistical_Units_Base.json" param=""/>
+				<MapEntry type="PT_FreeText" rule="*" targetType="string" param=""/>
+				<MapEntry type="Length" rule="*" targetType="number" param=""/>
+				<MapEntry type="Area" rule="*" targetType="number" param=""/>
+				<MapEntry type="RE_Version" rule="*" targetType="string" param=""/>
+				<MapEntry type="TM_Period" rule="*" targetType="string" param=""/>
+				<MapEntry type="DirectPosition" rule="*" targetType="string" param=""/>
+				<MapEntry type="DQ_PositionalAccuracy" rule="*" targetType="number" param=""/>
+				<MapEntry type="CRS" rule="*" targetType="number" param=""/>
+				<MapEntry type="Distance" rule="*" targetType="number" param=""/>
+				<MapEntry type="Angle" rule="*" targetType="number" param=""/>
+				<MapEntry type="QuantityRange" rule="*" targetType="number" param=""/>
+				<MapEntry type="MD_Distribution" rule="*" targetType="string" param=""/>
+				<MapEntry type="MD_Metadata" rule="*" targetType="string" param=""/>
+				<MapEntry type="Probability" rule="*" targetType="number" param=""/>
+				<MapEntry type="UnitOfMeasure" rule="*" targetType="string" param=""/>
+				<MapEntry type="Velocity" rule="*" targetType="number" param=""/>
+				<MapEntry type="LocalisedCharacterString" rule="*" targetType="string" param=""/>
+				<MapEntry type="GeodeticCRS" rule="*" targetType="string" param=""/>
+				<MapEntry type="VerticalCRS" rule="*" targetType="string" param=""/>
+				<MapEntry type="Weight" rule="*" targetType="number" param=""/>
+				<MapEntry type="CI_Citation" rule="*" targetType="string" param=""/>
+				<MapEntry type="Presence" rule="*" targetType="boolean" param=""/>
+				<MapEntry type="DomainProfileDescription" rule="*" targetType="string" param=""/>
+				<MapEntry type="HydrogeologicalSurface" rule="*" targetType="number" param=""/>
+				<MapEntry type="WRBQualifierPlaceValue" rule="*" targetType="string" param=""/>
+				<MapEntry type="FormOfRailwayNodeValue" rule="*" targetType="string" param=""/>
+				<MapEntry type="Name" rule="*" targetType="string" param=""/>
+				<MapEntry type="quantityrange" rule="*" targetType="number" param=""/>		
+				<MapEntry type="ex_verticalextent" rule="*" targetType="string" param=""/>
+				<MapEntry type="lc_landcoverclassificationsystem" rule="*" targetType="string" param=""/>
+				<MapEntry type="relatedorganization" rule="*" targetType="string" param=""/>
+				<MapEntry type="linkdirectionvalue" rule="*" targetType="string" param=""/>
+				<MapEntry type="link" rule="*" targetType="string" param=""/>
+				<MapEntry type="linkset" rule="*" targetType="string" param=""/>
+				<MapEntry type="MD_Metadata" rule="*" targetType="string" param=""/>
+				<MapEntry type="RecordType" rule="*" targetType="string" param=""/>
+				<MapEntry type="CoverageFunction" rule="*" targetType="string" param=""/>
+				<MapEntry type="RE_Version" rule="*" targetType="string" param=""/>
+				<MapEntry type="GM_Primitive" rule="*" targetType="string" param=""/>
+				<MapEntry type="Identifier" rule="*" targetType="string" param=""/>
+				<MapEntry type="GeographicalName" rule="*" targetType="string" param=""/>
+			</mapEntries>
+			<xi:include href="https://shapechange.net/resources/config/StandardMapEntries_JSON.xml"/>
+		</Target>
+	</targets>
+</ShapeChangeConfiguration>
