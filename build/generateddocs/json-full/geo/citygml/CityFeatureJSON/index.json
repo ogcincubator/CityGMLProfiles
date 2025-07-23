@@ -9,7 +9,7 @@
   "itemClass": "schema",
   "register": "ogc-building-block-examples",
   "version": "1.0",
-  "dateOfLastChange": "2024-08-20",
+  "dateOfLastChange": "2025-07-23",
   "sources": [
     {
       "title": "OGC API - Features, Part 1, 7.16.2: Feature Response",
@@ -19,8 +19,8 @@
   "maturity": "development",
   "scope": "unstable",
   "dependsOn": [
-    "ogc.geo.features.feature",
-    "ogc.geo.citygml.conceptual"
+    "ogc.geo.citygml.conceptual",
+    "ogc.geo.features.feature"
   ],
   "tags": [
     "feature",
@@ -36,6 +36,7 @@
   "sourceSchema": "https://ogcincubator.github.io/CityGMLProfiles/_sources/CityFeatureJSON/schema.yaml",
   "ldContext": "https://ogcincubator.github.io/CityGMLProfiles/build/annotated/geo/citygml/CityFeatureJSON/context.jsonld",
   "sourceFiles": "https://ogcincubator.github.io/CityGMLProfiles/_sources/CityFeatureJSON/",
+  "rdfData": [],
   "validationPassed": true,
   "testOutputs": "https://github.com/ogcincubator/CityGMLProfiles/blob/master/build/tests/geo/citygml/CityFeatureJSON/",
   "description": "## CityGML as JSON based on FG-JSON schema\n\n\n\n\n",

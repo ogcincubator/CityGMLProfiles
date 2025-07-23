@@ -11,16 +11,16 @@
         dcat:Dataset,
         bblocks:Schema ;
     rdfs:label "CityGML Feature JSON Schema" ;
-    dct:abstract "A Generic OGC API Features compliant JSON schema. The schema is derived from the CityGML UML model" ;
+    dct:abstract "A Generic OGC API Features compliant JSON schema. The schema is derived from the CityGML UML model"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2023-05-19T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/CityGMLProfiles/build/generateddocs/json-full/geo/citygml/CityFeatureJSON/index.json" ],
-        [ dct:format "text/html" ;
+    dct:description [ dct:format "text/html" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/CityGMLProfiles/bblock/ogc.geo.citygml.CityFeatureJSON" ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/CityGMLProfiles/build/generateddocs/markdown/geo/citygml/CityFeatureJSON/index.md" ] ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/CityGMLProfiles/build/generateddocs/markdown/geo/citygml/CityFeatureJSON/index.md" ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/CityGMLProfiles/build/generateddocs/json-full/geo/citygml/CityFeatureJSON/index.json" ] ;
     dct:hasVersion "1.0" ;
-    dct:modified "2024-08-20"^^xsd:date ;
+    dct:modified "2025-07-23"^^xsd:date ;
     dct:source <https://docs.ogc.org/is/17-069r3/17-069r3.html#_response_7> ;
     skos:inScheme <https://ogcincubator.github.io/CityGMLProfiles/> ;
     dcat:keyword "examples",
@@ -37,16 +37,16 @@
         dcat:Dataset,
         bblocks:Schema ;
     rdfs:label "CityGML Core Profile" ;
-    dct:abstract "Core CityGML profile - as UML if applicable" ;
+    dct:abstract "Core CityGML profile - as UML if applicable"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2024-06-19T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/CityGMLProfiles/build/generateddocs/markdown/geo/citygml/conceptual-core-profile/index.md" ],
-        [ dct:format "text/html" ;
+    dct:description [ dct:format "text/html" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/CityGMLProfiles/bblock/ogc.geo.citygml.conceptual-core-profile" ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/CityGMLProfiles/build/generateddocs/markdown/geo/citygml/conceptual-core-profile/index.md" ],
         [ dct:format "application/json" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/CityGMLProfiles/build/generateddocs/json-full/geo/citygml/conceptual-core-profile/index.json" ] ;
     dct:hasVersion "1.0" ;
-    dct:modified "2024-08-20"^^xsd:date ;
+    dct:modified "2025-07-23"^^xsd:date ;
     dct:source <https://ogcincubator.github.io/TBD> ;
     skos:inScheme <https://ogcincubator.github.io/CityGMLProfiles/> ;
     dcat:keyword "examples",
@@ -72,16 +72,16 @@
         dcat:Dataset,
         bblocks:Schema ;
     rdfs:label "CityGML Feature ConceptualModel" ;
-    dct:abstract "The CityGML Conceptual Model. Normative artefact is a UML model, this building block registers it and provides for transparency regarding other implementation relationships to the model." ;
+    dct:abstract "The CityGML Conceptual Model. Normative artefact is a UML model, this building block registers it and provides for transparency regarding other implementation relationships to the model."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2023-05-19T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/CityGMLProfiles/build/generateddocs/json-full/geo/citygml/conceptual/index.json" ],
+        [ dct:format "text/html" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/CityGMLProfiles/bblock/ogc.geo.citygml.conceptual" ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/CityGMLProfiles/build/generateddocs/markdown/geo/citygml/conceptual/index.md" ],
-        [ dct:format "application/json" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/CityGMLProfiles/build/generateddocs/json-full/geo/citygml/conceptual/index.json" ] ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/CityGMLProfiles/build/generateddocs/markdown/geo/citygml/conceptual/index.md" ] ;
     dct:hasVersion "1.0" ;
-    dct:modified "2024-08-20"^^xsd:date ;
+    dct:modified "2025-07-23"^^xsd:date ;
     dct:source <https://github.com/opengeospatial/CityGML-3.0CM/releases/download/3.0.0-final.2021.02.23/XMI.Files.zip>,
         <https://ogcincubator.github.io/TBD>,
         <https://www.ogc.org/standard/citygml/> ;
@@ -97,19 +97,19 @@
     dct:abstract """This repository is for the development, testing and publication of CityGML profiles.
 
 Building blocks represent different levels of abstraction, from conceptual to  implementation modules to individuals Feature Types, and ways of combining these.
-""" ;
+"""^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:description """TBD
-""" ;
+"""^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     skos:prefLabel "Building Blocks - CityGML Profiles" ;
     bblocks:hasValidationReport <https://ogcincubator.github.io/CityGMLProfiles/build/tests/report.html> ;
     bblocks:imports <https://opengeospatial.github.io/bblocks/register.json> .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2024-08-20T10:32:54.289200"^^xsd:dateTime ;
-    prov:startedAtTime "2024-08-20T10:32:54.227569"^^xsd:dateTime ;
+    prov:endedAtTime "2025-07-23T22:49:31.962032"^^xsd:dateTime ;
+    prov:startedAtTime "2025-07-23T22:49:31.894582"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
             dct:format "application/json" ;
-            dct:hasVersion "git:6e08426516860d768a79fd22801f1216e6a2d72d" ;
+            dct:hasVersion "git:fba55fe8477870c804e487ff091a7069c1386f20" ;
             rdfs:seeAlso <https://ogcincubator.github.io/CityGMLProfiles/build/register.json> ],
         [ a prov:Entity ;
             dct:format "application/yaml" ;
@@ -117,6 +117,6 @@ Building blocks represent different levels of abstraction, from conceptual to  i
     prov:wasAssociatedWith [ a prov:Agent,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;
-            dct:hasVersion "0.3.51" ;
+            dct:hasVersion "0.5.dev3+g1871e64" ;
             rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] .
 

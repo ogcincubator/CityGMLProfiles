@@ -1,5 +1,5 @@
 Validation report for ogc.geo.citygml.CityFeatureJSON - CityGML Feature JSON Schema
-Generated 2024-08-20T10:32:54.214606+00:00
+Generated 2025-07-23T22:49:31.875845+00:00
 === Files ===
 Using example_1_1.json from examples
 JSON-LD context is present - uplifting
